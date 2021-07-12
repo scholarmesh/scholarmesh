@@ -1,0 +1,123 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage[bookmarks]{hyperref}
+
+\begin{document}
+
+\pagestyle{empty}
+\begin{center}
+  \begin{figure}
+    \centering
+    \includegraphics[width=.33\textwidth]{nsu-logo.png}
+  \end{figure}
+  {\sc
+  {\large North South University} \\
+  Department of Electrical and Computer Engineering
+
+  \bigskip
+  \bigskip
+  \bigskip
+
+  {\Large Project Proposal}
+
+  \bigskip
+  \bigskip
+
+  \hline
+  \medskip
+  {\Huge “ScholarMesh”} \\[\bigskipamount]
+  \textnormal{\large\it A modern networking platform for people interested in academic research}
+  \medskip
+  \hline
+
+  \bigskip
+  \bigskip
+  \bigskip
+
+  Database Systems Lab \\
+  CSE311L \\
+  Section: 1 \\
+  Semester: Summer 2021
+  }
+
+  \vspace{5\bigskipamount}
+
+  \begin{tabular}{ll|c}
+    \textit{Student Names} & \textit{IDs} & \multirow{5}{*}{\makecell[r]{
+                                              \textit{Course Faculty} \\
+                                              Ahmed Fahmin \\[\smallskipamount]
+                                              \textit{Lab Instructor} \\
+                                              Nazmul Alam Dipto \\
+                                            }} \\
+    Mostafa Mushsharat & 1931298042 \\
+    Nadman Ashraf Khan & 2012466642 \\
+    Tahmid Ashraf Khan & 2012711642 \\
+  \end{tabular}
+
+  \bigskip
+  \bigskip
+  \bigskip
+  \textsc{project repository}: \texttt{https://github.com/NadmanKhan/scholarmesh}
+
+\end{center}
+\clearpage
+\pagebreak
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section*{Introduction} % (fold)
+\label{sec:introduction}
+When writing their thesis papers, university students often struggle to find suitable group members and supervisors for their research.
+The orthodox way to do this is to email several professors, going through their profiles and papers on various websites and databases.
+Most students end up having as research partners their close friends, who might not be a suitable match for them.
+Also, they often struggle to get a professor to be their supervisor.
+This project draws its inspiration from aiming to solve such problems.
+Our website will provide a networking platform that will specialize in connecting people with academic research interests.
+Both students and professors can search and verify the backgrounds of each other to approach the people of their interests.
+Professionals can also use the website to find other researchers.
+% section introduction (end)
+
+
+\section*{Objectives} % (fold)
+\label{sec:objectives}
+\begin{itemize}
+  \item To streamline the process of finding research partners for students, professors, and professionals.
+  \item Follow other researchers and a cademic papers on various topics to keep up to date with recent developments and publications.
+  \item List conference dates for active researchers to be aware of a deadline and/or plan for submission to new ones.
+  \item Connect peers and mentors sharing similar interests and expertise.
+  \item Allow discussion through a chat-based messaging system.
+\end{itemize}
+% section objectives (end)
+
+\section*{Target Users} % (fold)
+\label{sec:target_users}
+\begin{itemize}
+  \item \emph{Students}: Students during their thesis research trying to find partners and supervisors for their paper.
+  \item \emph{Professors}: Professors and Faculties looking for research groups of students, working on their thesis, to supervise.
+  \item \emph{Professionals}: Researchers working on a certain project that require niche expertise unavailable to them at the moment.
+\end{itemize}
+% section target_users (end)
+
+\section*{Value Proposition} % (fold)
+\label{sec:value_proposition}
+The website will reduce the bureaucracy while trying to connect to partners that share similar interests and compatible expertise for working on research. It will also help students and professors to connect faster through profile summaries of their areas of interest, expertise, and publications. In addition, professionals can also use the service to find and connect to researchers around the world that match their projects’ interests. Further services like the chat-based messaging system and upcoming conference dates, will allow for better communication and awareness of opportunities even after their research. An updating timeline will pique the interest of users to contribute to others’ projects and/or initiate their own.
+% section value_proposition (end)
+
+\section*{Technologies To Use} % (fold)
+\label{sec:technologies_to_use}
+\begin{itemize}
+  \item \textit{Client-side languages and frameworks} \\
+  HTML, CSS, \mbox{JavaScript}, \mbox{TypeScript}, \mbox{Bootstrap}
+  \item \textit{Server-side languages and frameworks} \\
+  \mbox{TypeScript}, \mbox{Express}
+  \item \textit{Database management system} \\
+  \mbox{MySQL}
+\end{itemize}
+% section technologies_to_use (end)
+
+
+\end{document}
