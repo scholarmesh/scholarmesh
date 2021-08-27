@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/scholarmesh/scholarmesh/issues"
   },
-  "homepage": "https://github.com/scholarmesh/scholarmesh#readme"
+  "homepage": "https://github.com/scholarmesh/scholarmesh#readme",
+  "devDependencies": {
+    "sass": "^1.38.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.3.3",
+    "bootstrap": "^5.1.0",
+    "postcss-cli": "^8.3.1"
+  }
 }
