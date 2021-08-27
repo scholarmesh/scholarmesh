@@ -7,38 +7,38 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <link href="assets/css/profile.css" rel="stylesheet">
-  <link href="assets/css/bootdey.css" rel="stylesheet">
 
   <title>User Name — ScholarMesh</title>
 </head>
-<body class="text-white bg-dark">
+<body class="text-light-primary bg-dark">
 
-<div class="container">
+<div class="container position-relative">
   <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+    <a href="/" class="d- flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
       <span class="text-white">[ScholarMesh logo]</span>
-<!--      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>-->
+      <!--      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>-->
     </a>
-
     <div class="col-md-3 text-end">
       <button type="button" class="btn btn-outline-primary me-2">Login</button>
       <button type="button" class="btn btn-primary">Sign up</button>
     </div>
   </header>
+
+
 </div>
 
 <div class="position-relative">
   <div class="row justify-content-center">
-    <div class="col-8 pb-3 bg-dark">
-      <div class="profile-header bg-dark">
-        <div class="cover bg-dark">
-          <img src="https://bootdey.com/img/Content/bg1.jpg" class="img-fluid" alt="profile cover" />
-          <div class="d-flex justify-content-between align-items-center bg-transparent">
-            <div>
-              <img class="rounded-circle" src="assets/img/avatar.png" alt="profile">
-              <span class="profile-name">Amiah Burton</span>
+    <div class="col-6 pb-3 bg-dark">
+      <div>
+        <div class="position-relative bg-dark">
+          <img src="assets/img/dummy.jpg" class="img-fluid bg-dark-secondary" alt="profile cover" style="padding-bottom: 7rem;"/>
+          <div class="d-flex justify-content-between align-items-center bg-transparent position-absolute bottom-0 start-0">
+            <div class="w-100">
+              <img class="rounded-circle" src="assets/img/avatar.jpg" width="40%" alt="profile picture">
+              <span class="ms-2 fs-4">John Doe</span>
             </div>
-            <div class="d-none d-md-block">
+            <div class="d-none d-md-block position-absolute bottom-3 end-0">
               <button class="btn btn-primary btn-icon-text btn-edit-profile">
                 <img src="assets/svg/edit-profile.svg" alt="" />
                 Edit profile
@@ -46,10 +46,10 @@
             </div>
           </div>
         </div>
-        <div class="bg-dark-secondary px-4 pt-5 pb-2">
+        <div class="bg-dark-secondary px-4 pt-2 pb-2">
           This is the bio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto autem dolorem dolorum, ducimus ea ex illo in, iure nemo nobis sapiente, tenetur. Corporis debitis fuga possimus unde voluptate. Distinctio!
         </div>
-        <div id="header-links" class="bg-dark-secondary">
+        <div id="profile-links" class="bg-dark-secondary">
           <ul class="links d-flex align-items-center mt-3 mt-md-0">
             <li class="d-flex align-items-center">
               <span class="d-none d-md-block">
@@ -100,22 +100,26 @@
     <!-- left wrapper start -->
     <!-- left wrapper end -->
     <!-- middle wrapper start -->
-    <div class="col-8 middle-wrapper">
+    <div class="col-6">
       <div class="row">
         <div class="col-md-12">
           <div class="card rounded bg-dark-secondary">
             <div class="card-header">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <img class="img-xs rounded-circle" src="assets/img/avatar.png" alt="">
-                  <div class="ml-2">
-                    <p>Mike Popescu</p>
-                    <p class="text-muted">1 min ago</p>
+                  <img class="d-flex rounded-circle" src="assets/img/avatar.png" alt="Profile picture" style="width: 50px">
+                  <div class="ms-2">
+                    <p class="pt-3">John Doe</p>
+                    <p class="text-muted pb-">1 min ago</p>
                   </div>
                 </div>
                 <div class="dropdown">
                   <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/svg/threedots.svg" alt="" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--nord6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal icon-lg pb-3px">
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                     <a class="dropdown-item d-flex align-items-center" href="#">
@@ -139,21 +143,29 @@
             </div>
             <div class="card-body">
               <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p>
-              <img class="img-fluid" src="assets/img/avatar.png" alt="">
+              <img class="img-fluid" src="assets/img/dummy.jpg" alt="">
             </div>
             <div class="card-footer">
               <div class="d-flex post-actions">
                 <a href="javascript:" class="d-flex align-items-center text-muted mr-4">
-                  <img src="assets/svg/like.svg" alt="" />
-                  <p class="d-none d-md-block ml-2">Like</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--nord6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-md">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                  <p class="d-none d-md-block ms-1 me-3 pt-3 text-light-tertiary">Like</p>
                 </a>
                 <a href="javascript:" class="d-flex align-items-center text-muted mr-4">
-                  <img src="assets/svg/comment.svg" alt="" />
-                  <p class="d-none d-md-block ml-2">Comment</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--nord6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square icon-md">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                  <p class="d-none d-md-block ms-1 me-3 pt-3 text-light-tertiary">Comment</p>
                 </a>
                 <a href="javascript:" class="d-flex align-items-center text-muted">
-                  <img src="assets/svg/share-arrowoutfrombucket.svg" alt="" />
-                  <p class="d-none d-md-block ml-2">Share</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--nord6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share icon-md">
+                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                    <polyline points="16 6 12 2 8 6"></polyline>
+                    <line x1="12" y1="2" x2="12" y2="15"></line>
+                  </svg>
+                  <p class="d-none d-md-block ms-1 me-3 pt-3 text-light-tertiary">Share</p>
                 </a>
               </div>
             </div>
