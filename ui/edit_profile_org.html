@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <title>Edit Organization Profile &mdash; ScholarMesh</title>
+</head>
+<body>
+
+<div class="container col-xxl-6 col-xl-7 col-8">
+  <form>
+
+  <h2 class="mb-3 mb-md-4">Edit Organization Profile</h2>
+
+  <div class="card my-4">
+    <div class="card-header">About</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item p-4">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="orgName" class="col-form-label">
+              <span class="h4">Name</span>
+            </label>
+          </div>
+          <div class="col-md-9">
+            <input type=text class="form-control" id="orgName" value="<current name>">
+          </div>
+        </div>
+      </li>
+
+      <li class="list-group-item p-4">
+        <h4 class="mb-3">Display pictures</h4>
+        <div class="row mt-2">
+          <label for="profilePicture" class="col-md-3 col-form-label">Profile picture</label>
+          <div class="col-md-9">
+            <input type="file" class="form-control" id="profilePicture">
+            <img src="assets/img/dummy.jpg" alt="" class="rounded-circle m-2" width="100px" />
+          </div>
+        </div>
+        <div class="row mt-2">
+          <label for="bannerImage" class="col-md-3 col-form-label">Banner image</label>
+          <div class="col-md-9">
+            <input type="file" class="form-control" id="bannerImage">
+            <img src="assets/img/dummy.jpg" alt="" class="rounded m-2" style="width: 200px;" />
+          </div>
+        </div>
+      </li>
+
+      <li class="list-group-item p-4">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="orgSiteUrl" class="col-form-label">
+              <span class="h4">Website</span>
+            </label>
+          </div>
+          <div class="col-md-9">
+            <input type=text class="form-control" id="orgSiteUrl" value="<current URL>">
+          </div>
+        </div>
+      </li>
+
+      <li class="list-group-item p-4">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="orgAddress" class="col-form-label">
+              <span class="h4">Address</span>
+            </label>
+          </div>
+          <div class="col-md-9">
+            <input type=text class="form-control" id="orgAddress" value="<current address>">
+          </div>
+        </div>
+      </li>
+
+      <li class="list-group-item p-4">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="orgDesc" class="col-form-label">
+              <span class="h4">Description</span>
+            </label>
+          </div>
+          <div class="col-md-9">
+            <input type=text class="form-control" id="orgDesc" value="<current description>">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card my-4">
+    <div class="card-header">Moderation</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item p-4">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>Moderator</h4>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select" aria-label="Select organization">
+              <option value="affiliate1">Affiliate 1</option>
+              <option value="affiliate2">Affiliate 2</option>
+              <option value="affiliate3">Affiliate 3</option>
+            </select>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  </form>
+</div>
+
+</body>
+</html>

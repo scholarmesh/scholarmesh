@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <title>Settings &mdash; ScholarMesh</title>
+</head>
+<body>
+
+<div class="container col-xxl-6 col-xl-7 col-8">
+
+  <h2 class="mb-3 mb-md-4">Settings</h2>
+
+  <div class="card my-4">
+    <div class="card-header">Display Settings</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item p-4">
+        <div class="d-flex flex-row justify-content-between flex-wrap">
+          <div class="col">
+            <h4>Dark mode</h4>
+          </div>
+          <div class="col-auto d-flex align-items-center justify-content-center form-check form-switch">
+            <input class="col-auto form-check-input" type="checkbox" id="darkModeSwitch" />
+            <label class="form-check-label visually-hidden" for="darkModeSwitch">Turn dark mode on</label>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card my-4">
+    <div class="card-header">Account Settings</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item p-4">
+        <form>
+          <h4 class="mb-3">Change account password</h4>
+          <div class="row mt-2">
+            <label for="oldPassword" class="col-md-3 col-form-label">Old password</label>
+            <div class="col-md-9">
+              <input type="password" class="form-control" id="oldPassword">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <label for="newPassword" class="col-md-3 col-form-label">New password</label>
+            <div class="col-md-9">
+              <input type="password" class="form-control" id="newPassword">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <label for="confirmNewPassword" class="col-md-3 col-form-label">Confirm new password</label>
+            <div class="col-md-9">
+              <input type="password" class="form-control" id="confirmNewPassword">
+            </div>
+          </div>
+          <div class="d-flex flex-row-reverse mt-4 mt-sm-3">
+            <div class="col-12 col-sm-6 col-md-5 col-lg-3 d-flex align-items-center">
+              <button class="btn btn-primary w-100">Update password</button>
+            </div>
+          </div>
+        </form>
+      </li>
+
+      <li class="list-group-item p-4">
+        <div class="d-flex flex-row justify-content-between flex-wrap">
+          <div class="col">
+            <h4>Terminate account</h4>
+            <p>Deleting your account will &hellip;</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-lg-3 d-flex align-items-center">
+            <button class="btn btn-danger w-100">Delete account</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
