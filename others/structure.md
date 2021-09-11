@@ -16,20 +16,19 @@
 - In `routes > web.php`:
   `Route::{method}('{uri}', {controller}@{function});`
 
-| {URI}                             | {method} | {controller}@{function} > {view}     |
-| --------------------------------- | -------- | ------------------------------------ |
-| /                                 | get      | PagesController@index > pages.index  |
-| /login                            | get      | LoginController@create > pages.login |
-| /login/submit                     | post     | LoginController@show > pages.profile |
-| /signup                           | get      | SignupController > signup            |
-| /profile/{{user->id}}             | get      | users.show                           |
-| /event                            | get      | event.index                          |
-| /event/{{event->id}}              | get      | events.show                          |
-| /profile/{{user->id}}/settings    | get      | users.settings                       |
-| /profile/{{user->id}}/chats       | get      | chats.index                          |
-| /group                            | get      | groups.index                         |
-| /group/{{group->id}}/             | get      | groups.show                          |
-| /group/{{group->id}}/{{post->id}} | get      | groups.show                          |
-| /post/<post_id>/new_comment       |          |                                      |
-| /post/new                         |          |                                      |
-| /search/<search_query>            |          |                                      |
+| {URI}                       | {method} | {controller}@{function} > {returning_view}          |
+| --------------------------- | -------- | --------------------------------------------------- |
+| /                           | get      | PagesController@index > pages.index                 |
+| /login                      | get      | PagesController@login> pages.login                  |
+| /signup                     | get      | PagesController@signup> pages.signup                |
+| /profile/{profile}          | get      | UsersController@show > pages.users.show             |
+| /profile/{profile}/settings | get      | UsersController@edit > pages.users.settings         |
+| /events                     | get      | EventsController@index > pages.event.index          |
+| /events/{event}             | get      | EventsController@show > pages.events.show           |
+| /events/{event}/settings    | get      | EventsController@edit > pages.events.users.settings |
+| /profile/{profile}/chats    | get      | ChatsController@index > pages.chats.index           |
+| /groups                     | get      | GroupsController@index > pages.groups.index         |
+| /groups/{group}/            | get      | GroupsController@index > pages.groups.show          |
+| /group/{group}/{post}       | get      | PostsController@show > pages.posts.show             |
+| /group/{group}/create-post  | get      | PostsController@create > pages.posts.create         |
+| /search/{search}            | get      | SearchController@store > pages.search.result        |
