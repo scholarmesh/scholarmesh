@@ -31,7 +31,7 @@
 <body class="text-center bg-dark-secondary text-light-secondary">
 
 <main id="form-signup">
-        <form method="signup" action="create" id="form1">
+        <form method="post" action="Default.aspx" id="form1">
             <div style="max-width: 400px;">
 
                 <img class="mb-4" src="assets/brand/scholarmesh-logo.svg" alt="" width="72" height="57">
@@ -41,45 +41,45 @@
                 <hr>
                 <label for="firstname">
                     Firstname</label>
-                <input name="firstname" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
+                <input name="txtUsername" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
                     required />
                 <br />
                 <label for="lastname">
                     Lastname</label>
-                <input name="lastname" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
+                <input name="txtUsername" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
                     required />
                 <br />
-                <label for="Password">
+                <label for="txtPassword">
                     Password</label>
-                <input name="Password" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
+                <input name="txtPassword" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
                     class="form-control" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
                 <br />
-                <label for="ConfirmPassword">
+                <label for="txtConfirmPassword">
                     Confirm Password</label>
-                <input name="ConfirmPassword" type="password" id="txtConfirmPassword" class="form-control"
+                <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control"
                     placeholder="Confirm Password" />
                 <br />
-                <label for="Email">
+                <label for="txtEmail">
                     Email</label>
-                <input name="Email" id="txtEmail" class="form-control" placeholder="Enter Email"
+                <input name="txtEmail" id="txtEmail" class="form-control" placeholder="Enter Email"
                     required type="email" />
                 <br />
 
-                <label for="PhoneNumber">
+                <label for="txtEmail">
                     Phone number</label>
-                <input name="PhoneNumber" id="txtEmail" class="form-control" placeholder="Enter Phone number"
+                <input name="txtEmail" id="txtEmail" class="form-control" placeholder="Enter Phone number"
                     required type="email" />
                 
                 <br />
                 <div class="form-check">
-                      <input class="form-check-input" type="radio" name="IndividualRadio" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label" for="IndividualRadio">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
                         Individual
                       </label>
                     </div>
                     <div class="form-check">
-                      <input class="form-check-input" type="radio" name="PublisherRadio" id="exampleRadios2" value="option2">
-                      <label class="form-check-label" for="PublisherRadio">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
                         Publisher
                       </label>
                 </div>
