@@ -1,4 +1,4 @@
-Models
+models:
 - User (modify)
 - Conference
 - Post
@@ -9,3 +9,17 @@ Models
 - Chatroom
 - Message
 - Notification
+
+views:
+1. /
+2. /conference/<conf_id>
+3. /edit_profile
+4. /group/<group_id>
+5. /login
+6. /messages
+7. /post/<post_id>
+8. /post/<post_id>/new_comment
+9. /post/new
+10. /profile/<user_id>
+11. /search/<search_query>
+12. /signup
