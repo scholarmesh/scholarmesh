@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::signup('/create', 'SignupController@signup');
+Route::get('/signup', 'SignupController@show');
