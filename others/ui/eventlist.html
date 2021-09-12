@@ -1,122 +1,181 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/eventlist.css" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <title>Events &mdash; ScholarMesh</title>
+
+  <style>
+      .widget .panel, .widget.panel {
+          overflow: hidden;
+      }
+
+      .widget {
+          margin-bottom: 20px;
+          border: 0;
+      }
+
+      .row-table {
+          display: table;
+          table-layout: fixed;
+          height: 100%;
+          width: 100%;
+          margin: 0;
+      }
+
+      .widget .lateral-picture {
+          position: relative;
+          display: block;
+          height: 240px;
+          width: auto;
+          overflow: hidden;
+      }
+
+      .widget .lateral-picture > img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          max-height: 100%;
+          width: auto;
+      }
+
+      .align-middle {
+          vertical-align: middle;
+      }
+
+      .p-lg {
+          padding: 15px !important;
+      }
+
+      .btn {
+          border-radius: 3px;
+          font-size: 13px;
+          border-color: transparent;
+          -webkit-appearance: none;
+          outline: 0 !important;
+          -webkit-transition: all .1s;
+          -o-transition: all .1s;
+          transition: all .1s;
+      }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-              <!-- START widget-->
-              <div class="panel widget">
-                 <div class="row row-table row-flush">
-                    <div class="col-xs-5">
-                       <picture class="lateral-picture">
-                          <img src="https://via.placeholder.com/400x400/FFB6C1/000000" alt="">
-                       </picture>
-                    </div>
-                    <div class="col-xs-7 align-middle p-lg">
-                       <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
-                       </div>
-                       <p>
-                          <span class="text-lg">16</span>Aug</p>
-                       <p>
-                          <strong>EVENT INVITATION</strong>
-                       </p>
-                       <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.</p>
-                       <a href="#">Click for details</a>
-                    </div>
-                 </div>
-              </div>
-              <!-- END widget-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <!-- START widget-->
+      <div class="panel widget">
+        <div class="row row-table row-flush">
+          <div class="col-xs-5">
+            <picture class="lateral-picture">
+              <img src="https://via.placeholder.com/400x400/FFB6C1/000000" alt="">
+            </picture>
+          </div>
+          <div class="col-xs-7 align-middle p-lg">
+            <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
             </div>
-            <div class="col-md-6">
-              <!-- START widget-->
-              <div class="panel widget">
-                 <div class="row row-table row-flush">
-                    <div class="col-xs-5">
-                       <picture class="lateral-picture">
-                          <img src="https://via.placeholder.com/400x400/87CEFA/000000" alt="">
-                       </picture>
-                    </div>
-                    <div class="col-xs-7 align-middle p-lg">
-                       <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
-                       </div>
-                       <p>
-                          <span class="text-lg">16</span>Aug</p>
-                       <p>
-                          <strong>EVENT INVITATION</strong>
-                       </p>
-                       <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.</p>
-                       <a href="#">Click for details</a>
-                    </div>
-                 </div>
-              </div>
-              <!-- END widget-->
-            </div>
+            <p>
+              <span class="text-lg">16</span>Aug</p>
+            <p>
+              <strong>EVENT INVITATION</strong>
+            </p>
+            <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at
+              lobortis.</p>
+            <a href="#">Click for details</a>
+          </div>
         </div>
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                  <!-- START widget-->
-                  <div class="panel widget">
-                     <div class="row row-table row-flush">
-                        <div class="col-xs-5">
-                           <picture class="lateral-picture">
-                              <img src="https://via.placeholder.com/400x400/FFB6C1/000000" alt="">
-                           </picture>
-                        </div>
-                        <div class="col-xs-7 align-middle p-lg">
-                           <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
-                           </div>
-                           <p>
-                              <span class="text-lg">16</span>Aug</p>
-                           <p>
-                              <strong>EVENT INVITATION</strong>
-                           </p>
-                           <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.</p>
-                           <a href="#">Click for details</a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- END widget-->
-                </div>
-                <div class="col-md-6">
-                  <!-- START widget-->
-                  <div class="panel widget">
-                     <div class="row row-table row-flush">
-                        <div class="col-xs-5">
-                           <picture class="lateral-picture">
-                              <img src="https://via.placeholder.com/400x400/87CEFA/000000" alt="">
-                           </picture>
-                        </div>
-                        <div class="col-xs-7 align-middle p-lg">
-                           <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
-                           </div>
-                           <p>
-                              <span class="text-lg">16</span>Aug</p>
-                           <p>
-                              <strong>EVENT INVITATION</strong>
-                           </p>
-                           <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at lobortis.</p>
-                           <a href="#">Click for details</a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- END widget-->
-                </div>
-            </div>
-       
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      </div>
+      <!-- END widget-->
     </div>
+    <div class="col-md-6">
+      <!-- START widget-->
+      <div class="panel widget">
+        <div class="row row-table row-flush">
+          <div class="col-xs-5">
+            <picture class="lateral-picture">
+              <img src="https://via.placeholder.com/400x400/87CEFA/000000" alt="">
+            </picture>
+          </div>
+          <div class="col-xs-7 align-middle p-lg">
+            <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
+            </div>
+            <p>
+              <span class="text-lg">16</span>Aug</p>
+            <p>
+              <strong>EVENT INVITATION</strong>
+            </p>
+            <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at
+              lobortis.</p>
+            <a href="#">Click for details</a>
+          </div>
+        </div>
+      </div>
+      <!-- END widget-->
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- START widget-->
+        <div class="panel widget">
+          <div class="row row-table row-flush">
+            <div class="col-xs-5">
+              <picture class="lateral-picture">
+                <img src="https://via.placeholder.com/400x400/FFB6C1/000000" alt="">
+              </picture>
+            </div>
+            <div class="col-xs-7 align-middle p-lg">
+              <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
+              </div>
+              <p>
+                <span class="text-lg">16</span>Aug</p>
+              <p>
+                <strong>EVENT INVITATION</strong>
+              </p>
+              <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at
+                lobortis.</p>
+              <a href="#">Click for details</a>
+            </div>
+          </div>
+        </div>
+        <!-- END widget-->
+      </div>
+      <div class="col-md-6">
+        <!-- START widget-->
+        <div class="panel widget">
+          <div class="row row-table row-flush">
+            <div class="col-xs-5">
+              <picture class="lateral-picture">
+                <img src="https://via.placeholder.com/400x400/87CEFA/000000" alt="">
+              </picture>
+            </div>
+            <div class="col-xs-7 align-middle p-lg">
+              <div class="pull-right"><a href="#" class="btn btn-primary btn-sm">Register</a>
+              </div>
+              <p>
+                <span class="text-lg">16</span>Aug</p>
+              <p>
+                <strong>EVENT INVITATION</strong>
+              </p>
+              <p>Donec posuere neque in elit luctus tempor consequat enim egestas. Nulla dictum egestas leo at
+                lobortis.</p>
+              <a href="#">Click for details</a>
+            </div>
+          </div>
+        </div>
+        <!-- END widget-->
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>
