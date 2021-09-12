@@ -15,9 +15,8 @@
 
 In `routes > web.php`, add these lines:
 
-`use App\Http\Controllers\{controller};`
-
-`Route::{method}('{uri}', [{controller}::class, '{function}']);`
+`use App\Http\Controllers\{controller};
+ Route::{method}('{uri}', [{controller}::class, '{function}']);`
 
 Note that the following gives an error in Laravel 8:
 `Route::{method}('{uri}', {controller}@{function});`
