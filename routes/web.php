@@ -17,6 +17,4 @@ use Illuminate\Filesystem\Filesystem;
 
 Route::get('/', [PagesController::class, 'index']);
 
-//Route::get('/signup', function () {
-//  return file(public_path() . '/signup.html');
-//});
+Route::view('/login', 'login');
