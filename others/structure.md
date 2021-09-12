@@ -1,20 +1,26 @@
 # Models:
 
-- User (modify)
-- Event
-- Post
-- Group
-- Organization
-- Paper
-- Subject
-- Chat
-- Message
-- Notification
+-   User (modify)
+-   Event
+-   Post
+-   Group
+-   Organization
+-   Paper
+-   Subject
+-   Chat
+-   Message
+-   Notification
 
 # Routing:
 
-- In `routes > web.php`:
-  `Route::{method}('{uri}', {controller}@{function});`
+In `routes > web.php`, add these lines:
+
+`use App\Http\Controllers\{controller};`
+
+`Route::{method}('{uri}', [{controller}::class, '{function}']);`
+
+Note that the following gives an error in Laravel 8:
+`Route::{method}('{uri}', {controller}@{function});`
 
 | {URI}                       | {method} | {controller}@{function} > {returning_view}          |
 | --------------------------- | -------- | --------------------------------------------------- |
