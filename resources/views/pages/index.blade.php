@@ -1,6 +1,2 @@
-@extends('layouts.app')
-
-@section('content')
-    <h1>Welcome to ScholarMesh</h1>
-@endsection
-
+<x-layout title="Welcome">
+</x-layout>

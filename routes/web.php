@@ -19,6 +19,7 @@ Route::get('/', function () {
   //
 })->middleware('auth');
 
+
 Route::view('/login', 'login')->name('login');
 
 Route::get('/event', [EventController::class, 'show']);
