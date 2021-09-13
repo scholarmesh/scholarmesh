@@ -32,7 +32,7 @@
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <label for="firstName" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required />
+                            <input name="firstName" type="text" class="form-control" id="firstName" placeholder="John" value="" required />
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -40,7 +40,7 @@
 
                         <div class="col-sm-6">
                             <label for="lastName" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required />
+                            <input name="lastName" type="text" class="form-control" id="lastName" placeholder="Doe" value="" required />
                             <div class="invalid-feedback">
                                 Valid last name is required.
                             </div>
@@ -48,7 +48,7 @@
 
                         <div class="col-12">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+                            <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com" />
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
@@ -56,12 +56,12 @@
 
                         <div class="col-12">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" />
+                            <input name="password" type="password" class="form-control" id="password" placeholder="A strong password"/>
                         </div>
 
                         <div class="col-12">
                             <label for="confirmationPassword" class="form-label">Confirm password</label>
-                            <input type="password" class="form-control" id="confirmationPassword" />
+                            <input name="confirmationPassword" type="password" class="form-control" id="confirmationPassword" />
                         </div>
 
                         <!--                    <div class="col-12">-->
@@ -112,7 +112,7 @@
                 </form>
 
                 <div class="col-auto mt-4">
-                    <a href="/login" class="fs-5">Have an account already? Log in.</a>
+                    <a href="/login" class="fs-5">Already have an account? Log in.</a>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@
         'use strict'
 
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
+        let forms = document.querySelectorAll('.needs-validation')
 
         // Loop over them and prevent submission
         Array.prototype.slice.call(forms)
