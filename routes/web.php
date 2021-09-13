@@ -19,6 +19,7 @@ use Illuminate\Filesystem\Filesystem;
 
 Route::get('/', [HomeController::class], 'show')->middleware('auth');
 
+
 Route::view('/login', 'login')->name('login');
 Route::post('/signup', [UserController::class, 'create']);
 
