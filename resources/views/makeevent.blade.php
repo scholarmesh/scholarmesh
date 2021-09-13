@@ -18,7 +18,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link href="{{ URL::to('customcss/makeevent.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('css/makeevent.css') }}" rel="stylesheet">
 
     <title>Make Conference</title>
 </head>
