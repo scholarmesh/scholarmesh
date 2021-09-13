@@ -4,90 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css" />
 
-    <title>Sign Up &mdash; ScholarMesh</title>
-</head>
+    <title>Sign up &mdash; ScholarMesh</title>
 
-
-<body class="text-center bg-dark-secondary text-light-secondary">
-
-<main id="form-signup">
-        <form method="post" action="Default.aspx" id="form1">
-            <div style="max-width: 400px;">
-
-                <img class="mb-4" src="assets/brand/scholarmesh-logo.svg" alt="" width="72" height="57">
-
-                <h2 class="form-signin-heading mb-3 fw-normal">
-                    Signup</h2>
-                <hr>
-                <label for="firstname">
-                    Firstname</label>
-                <input name="txtUsername" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
-                    required />
-                <br />
-                <label for="lastname">
-                    Lastname</label>
-                <input name="txtUsername" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
-                    required />
-                <br />
-                <label for="txtPassword">
-                    Password</label>
-                <input name="txtPassword" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
-                    class="form-control" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
-                <br />
-                <label for="txtConfirmPassword">
-                    Confirm Password</label>
-                <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control"
-                    placeholder="Confirm Password" />
-                <br />
-                <label for="txtEmail">
-                    Email</label>
-                <input name="txtEmail" id="txtEmail" class="form-control" placeholder="Enter Email"
-                    required type="email" />
-                <br />
-
-                <label for="txtEmail">
-                    Phone number</label>
-                <input name="txtEmail" id="txtEmail" class="form-control" placeholder="Enter Phone number"
-                    required type="email" />
-
-                <br />
-                <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                      <label class="form-check-label" for="exampleRadios1">
-                        Individual
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                      <label class="form-check-label" for="exampleRadios2">
-                        Publisher
-                      </label>
-                </div>
-
-                <hr />
-                <input type="submit" name="btnSignup" value="Sign up" id="btnSignup" class="w-100 btn btn-lg btn-primary" />
-            </div>
-        </form>
-</main>
-
-
-<script type="text/javascript">
-    window.onload = function () {
-        var txtPassword = document.getElementById("txtPassword");
-        var txtConfirmPassword = document.getElementById("txtConfirmPassword");
-        txtPassword.onchange = ConfirmPassword;
-        txtConfirmPassword.onkeyup = ConfirmPassword;
-        function ConfirmPassword() {
-            txtConfirmPassword.setCustomValidity("");
-            if (txtPassword.value != txtConfirmPassword.value) {
-                txtConfirmPassword.setCustomValidity("Passwords do not match.");
-            }
+        <!-- Custom styles for this template -->
+    <style>
+        .container {
+            max-width: 960px;
         }
-    }
-</script>
+    </style>
+</head>
+<body class="bg-light">
 
+<div class="container">
+    <main>
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto m-5" src="assets/svg/sm-full.svg" alt="ScholarMesh logo" width="200rem" />
+            <h2 class="mt-5">Sign up for free</h2>
+            <p class="lead">Create a new account in just a few seconds.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-8">
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required />
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required />
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" />
+                        </div>
+
+                        <div class="col-12">
+                            <label for="confirmationPassword" class="form-label">Confirm password</label>
+                            <input type="password" class="form-control" id="confirmationPassword" />
+                        </div>
+
+                        <!--                    <div class="col-12">-->
+                        <!--                        <label for="address" class="form-label">Address</label>-->
+                        <!--                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>-->
+                        <!--                        <div class="invalid-feedback">-->
+                        <!--                            Please enter your shipping address.-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+
+                        <!--                    <div class="col-12">-->
+                        <!--                        <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>-->
+                        <!--                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">-->
+                        <!--                    </div>-->
+
+                        <!--                    <div class="col-md-5">-->
+                        <!--                        <label for="country" class="form-label">Country</label>-->
+                        <!--                        <select class="form-select" id="country" required>-->
+                        <!--                            <option value="">Choose...</option>-->
+                        <!--                            <option>United States</option>-->
+                        <!--                        </select>-->
+                        <!--                        <div class="invalid-feedback">-->
+                        <!--                            Please select a valid country.-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+
+                        <!--                    <div class="col-md-4">-->
+                        <!--                        <label for="state" class="form-label">State</label>-->
+                        <!--                        <select class="form-select" id="state" required>-->
+                        <!--                            <option value="">Choose...</option>-->
+                        <!--                            <option>California</option>-->
+                        <!--                        </select>-->
+                        <!--                        <div class="invalid-feedback">-->
+                        <!--                            Please provide a valid state.-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+
+                        <!--                    <div class="col-md-3">-->
+                        <!--                        <label for="zip" class="form-label">Zip</label>-->
+                        <!--                        <input type="text" class="form-control" id="zip" placeholder="" required>-->
+                        <!--                        <div class="invalid-feedback">-->
+                        <!--                            Zip code required.-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                    </div>
+
+                    <button class="w-100 my-4 btn btn-primary btn-lg" type="submit">Register</button>
+                </form>
+
+                <div class="col-auto mt-4">
+                    <a href="/login" class="fs-5">Have an account already? Log in.</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
 </body>
 </html>

@@ -60,6 +60,9 @@
         <form>
             <img class="m-5" src="{{ asset('svg/sm-full.svg') }}" alt="ScholarMesh logo" width="250rem" />
 
+            <h2 class="my-3 fw-normal">Sign in</h2>
+{{--            <p class="lead">You must log in first.</p>--}}
+
             <div class="form-floating">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput" class="text-dark-secondary">Email address</label>
