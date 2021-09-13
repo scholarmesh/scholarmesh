@@ -15,6 +15,8 @@ use Illuminate\Filesystem\Filesystem;
 |
 */
 
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', function () {
+  //
+})->middleware('auth');
 
-Route::view('/login', 'login');
+Route::view('/login', 'login')->name('login');
