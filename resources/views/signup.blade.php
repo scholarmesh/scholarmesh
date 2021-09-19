@@ -4,8 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="assets/icons/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('icons/bootstrap-icons.css') }}"/>
 
     <title>Sign up &mdash; ScholarMesh</title>
 </head>
@@ -14,7 +14,7 @@
 <div class="container" style="max-width: 960px">
     <main>
         <div class="py-5 text-center">
-            <img class="d-block mx-auto m-5" src="assets/svg/sm-full.svg" alt="ScholarMesh logo" width="200rem"/>
+            <img class="d-block mx-auto m-5" src="{{ asset('svg/sm-full.svg') }}" alt="ScholarMesh logo" width="200rem"/>
             <h2 class="mt-5">Sign up for free</h2>
             <p class="lead">Create a new account in seconds.</p>
         </div>
@@ -26,6 +26,8 @@
                 </div>
 
                 <form action="/signup" method="POST" class="needs-validation" novalidate>
+                    @csrf
+
                     <div class="row g-3">
                         <div class="col-12">
                             <label for="type" class="form-label">Profile type</label>
@@ -153,7 +155,7 @@
 </div>
 
 
-<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
 <script>
     (function () {
         'use strict'
