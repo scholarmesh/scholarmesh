@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\EventController;
 use Illuminate\Filesystem\Filesystem;
 
 /*
@@ -27,6 +28,6 @@ Route::view('/login', 'pages.login')->name('login');
 Route::view('/signup', 'pages.signup')->name('signup');
 Route::post('/signup', [UserController::class, 'create']);
 
-Route::get('/event', [EventController::class, 'show']);
-Route::get('/eventform', [EventController::class, 'index']);
+Route::get('/event/{event}', [EventController::class, 'show'])->name('event');
+Route::get('/eventform', [EventController::class, 'showEventform']);
 Route::post('/makeevent', [EventController::class, 'makeEvent'])->name('makeevent');
