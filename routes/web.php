@@ -23,8 +23,8 @@ use Illuminate\Filesystem\Filesystem;
 Route::get('/', [HomeController::class], 'show')->middleware('auth');
 
 
-Route::view('/login', 'login')->name('login');
-Route::view('/signup', 'signup')->name('signup');
+Route::view('/login', 'pages.login')->name('login');
+Route::view('/signup', 'pages.signup')->name('signup');
 Route::post('/signup', [UserController::class, 'create']);
 
 Route::get('/event', [EventController::class, 'show']);
