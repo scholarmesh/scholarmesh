@@ -8,17 +8,30 @@ use Illuminate\Http\Request;
 class EventController extends Controller
 {
     //
-    public function show()
+     public function show($slug)
     {
-        return view('event');
+        $event = DB::select("select * from conference where name = ?", [$slug]);
+        
+        return view('event', ['event' => $event[0]]);
     }
 
-    public function index()
+    public function showEventform()
     {
         return view('eventform');
     }
 
     public function makeEvent(Request $request){
+
+            $this->validate($request, [
+                'name' => 'required',
+                'image' => 'required',
+                'venue' => 'required',
+                'start-date' => 'required',
+                'end-date' => 'required',
+                'url' => 'required'
+            ]);
+
+
             $name = $request['name'];
             $dp = $request['image'];
             $venue = $request['venue'];
@@ -35,4 +48,5 @@ class EventController extends Controller
     }
 
 
+}
 }
