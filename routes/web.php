@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\EventController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use Illuminate\Filesystem\Filesystem;
@@ -21,6 +24,7 @@ Route::get('/', [HomeController::class], 'show')->middleware('auth');
 
 
 Route::view('/login', 'login')->name('login');
+Route::view('/signup', 'signup')->name('signup');
 Route::post('/signup', [UserController::class, 'create']);
 
 Route::get('/event', [EventController::class, 'show']);
