@@ -21,9 +21,9 @@
 
         <div class="row justify-content-center">
             <div class="col-md-7 col-lg-8">
-                <div class="alert alert-success" role="alert">
-                    Succeed
-                </div>
+                {{--<div class="alert alert-success" role="alert">--}}
+                {{--    Succeed--}}
+                {{--</div>--}}
 
                 <form action="/signup" method="POST" class="needs-validation" novalidate>
                     @csrf
