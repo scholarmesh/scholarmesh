@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `scholarmesh`.`user` ;
 CREATE TABLE IF NOT EXISTS `scholarmesh`.`user` (
   `user_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(255) NOT NULL,
-  `password` VARCHAR(32) NOT NULL,
+  `password` VARCHAR(64) NOT NULL,
   `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `type` TINYINT(1) NOT NULL,
   `first_name` VARCHAR(45) NOT NULL,
@@ -76,18 +76,6 @@ CREATE TABLE IF NOT EXISTS `scholarmesh`.`organization` (
   PRIMARY KEY (`org_id`),
   UNIQUE INDEX `user_id_UNIQUE` (`org_id` ASC) VISIBLE)
 COMMENT = '					';
-
-
--- -----------------------------------------------------
--- Table `scholarmesh`.`user_1`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `scholarmesh`.`user_1` ;
-
-CREATE TABLE IF NOT EXISTS `scholarmesh`.`user_1` (
-  `username` VARCHAR(16) NOT NULL,
-  `email` VARCHAR(255) NULL,
-  `password` VARCHAR(32) NOT NULL,
-  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP);
 
 
 -- -----------------------------------------------------
