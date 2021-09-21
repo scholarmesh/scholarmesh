@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    function show() {
+    function show(Request $req) {
         UserController::showProfile(Auth::id());
     }
 }

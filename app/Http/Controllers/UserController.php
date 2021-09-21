@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 //use App\Models\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -21,17 +22,31 @@ class UserController extends Controller
         ]);
     }
 
-    static function create(Request $req)
+    static function store(Request $req)
     {
-        DB::insert(
-            'INSERT INTO user(type, email, password, first_name, last_name, dob)
-            VALUES (0, :email, :password, :fname, :lname, \'2000-01-01\')',
-            [
-                'email' => $req->input('email'),
-                'password' => $req->input('password'),
-                'fname' => $req->input('fname'),
-                'lname' => $req->input('lname'),
-            ]
-        );
+        $credentials = $req->validate([
+            'type'       => 'required|integer|min:0|max:2',
+            'first_name' => 'required|max:255',
+            'last_name'  => 'required|max:255',
+            'email'      => 'required|email|max:255|unique:user,email',
+            'password'   => 'required',
+            'bio'        => 'string|nullable',
+        ]);
+
+        // return $credentials;
+
+        $user = new User($credentials);
+        $user->save();
+        // DB::insert(
+        //     'INSERT INTO user(type, email, password, first_name, last_name, dob)
+        //     VALUES (0, :email, :password, :fname, :lname, \'2000-01-01\')',
+        //     [
+        //         'email' => $req['email'],
+        //         'password' => bcrypt($req['password']),
+        //         'fname' => $req['fname'],
+        //         'lname' => $req['lname'],
+        //     ]
+        // );
+        return view('profile.user');
     }
 }

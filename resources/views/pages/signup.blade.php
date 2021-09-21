@@ -32,23 +32,23 @@
                         <div class="col-12">
                             <label for="type" class="form-label">Profile type</label>
                             <select name="type" id="type" class="form-select">
-                                <option value="0">Student</option>
+                                <option value="0" selected>Student</option>
                                 <option value="1">Professor</option>
                                 <option value="2">Professional</option>
                             </select>
                         </div>
 
                         <div class="col-sm-6">
-                            <label for="fname" class="form-label">First name</label>
-                            <input name="fname" type="text" class="form-control" id="fname" value="" required/>
+                            <label for="first_name" class="form-label">First name</label>
+                            <input name="first_name" type="text" class="form-control" id="first_name" value="" requir d/>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
                         </div>
 
                         <div class="col-sm-6">
-                            <label for="lname" class="form-label">Last name</label>
-                            <input name="lname" type="text" class="form-control" id="lname" value="" required/>
+                            <label for="last_name" class="form-label">Last name</label>
+                            <input name="last_name" type="text" class="form-control" id="last_name" value="" requir d/>
                             <div class="invalid-feedback">
                                 Valid last name is required.
                             </div>
@@ -56,15 +56,15 @@
 
                         <div class="col-12">
                             <label for="email" class="form-label">Email address</label>
-                            <input name="email" type="email" class="form-control" id="email"/>
-                            <div class="invalid-feedback">
+                            <input name="email" type="email" class="form-control" id="emai "/>
+                            <div class="was-validated">
                                 Please enter a valid email address.
                             </div>
                         </div>
 
                         <div class="col-12">
                             <label for="password" class="form-label">Password</label>
-                            <input name="password" type="password" class="form-control" id="password"/>
+                            <input name="password" type="password" class="form-control" id="passwor "/>
                             <div class="invalid-feedback">
                                 Please enter a valid password.
                             </div>
@@ -72,7 +72,7 @@
 
                         <div class="col-12">
                             <label for="confirmpass" class="form-label">Confirm password</label>
-                            <input type="password" class="form-control" id="confirmpass"/>
+                            <input type="password" class="form-control" id="confirmpas "/>
                             <div class="invalid-feedback">
                                 The passwords do not match.
                             </div>
@@ -80,12 +80,12 @@
 
                         <div class="col-6">
                             <label for="dob" class="form-label">Date of birth</label>
-                            <input name="dob" type="date" class="form-control" id="dob"/>
+                            <input name="dob" type="date" class="form-control" id="do "/>
                         </div>
 
                         <div class="col-6">
-                            <label for="dpic" class="form-label">Profile photo<span class="text-muted"> (Optional)</span></label>
-                            <input name="dpic" type="file" class="form-control" id="dpic"/>
+                            <label for="dp" class="form-label">Profile photo<span class="text-muted"> (Optional)</span></label>
+                            <input name="dp" type="file" class="form-control" id="dpi "/>
                             <div class="invalid-feedback">
                                 The passwords do not match.
                             </div>
@@ -98,7 +98,7 @@
 
                         <!--                    <div class="col-12">-->
                         <!--                        <label for="address" class="form-label">Address</label>-->
-                        <!--                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>-->
+                        <!--                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required -->
                         <!--                        <div class="invalid-feedback">-->
                         <!--                            Please enter your shipping address.-->
                         <!--                        </div>-->
@@ -106,7 +106,7 @@
 
                         <!--                    <div class="col-12">-->
                         <!--                        <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>-->
-                        <!--                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">-->
+                        <!--                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" -->
                         <!--                    </div>-->
 
                         <!--                    <div class="col-md-5">-->
@@ -133,7 +133,7 @@
 
                         <!--                    <div class="col-md-3">-->
                         <!--                        <label for="zip" class="form-label">Zip</label>-->
-                        <!--                        <input type="text" class="form-control" id="zip" placeholder="" required>-->
+                        <!--                        <input type="text" class="form-control" id="zip" placeholder="" required -->
                         <!--                        <div class="invalid-feedback">-->
                         <!--                            Zip code required.-->
                         <!--                        </div>-->
@@ -153,7 +153,6 @@
     </main>
 
 </div>
-
 
 <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
 <script>
