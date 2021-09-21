@@ -22,10 +22,15 @@ class LoginController extends Controller
             'password' => 'required',
         ]);
 
+        return $credentials;
+
         if (Auth::attempt($credentials)) {
-            $req->session()->regenerate();
-            return redirect()->intended('login');
+            echo Auth::user();
+            // $req->session()->regenerate();
+            // return redirect()->intended('login');
         }
+
+        return $req;
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
