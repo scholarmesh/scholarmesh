@@ -13,7 +13,7 @@ class CreateUserLikesCommentTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_likes_comment', function (Blueprint $table) {
+        Schema::create('comment_liker', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->foreignId('user_id');
@@ -28,6 +28,6 @@ class CreateUserLikesCommentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_likes_comment');
+        Schema::dropIfExists('comment_liker');
     }
 }

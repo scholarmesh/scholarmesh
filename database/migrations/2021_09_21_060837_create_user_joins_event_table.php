@@ -13,7 +13,7 @@ class CreateUserJoinsEventTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_joins_event', function (Blueprint $table) {
+        Schema::create('event_attendee', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->foreignId('user_id');
@@ -28,6 +28,6 @@ class CreateUserJoinsEventTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_joins_event');
+        Schema::dropIfExists('event_attendee');
     }
 }

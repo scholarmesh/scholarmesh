@@ -13,7 +13,7 @@ class CreateUserLikesPostTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_likes_post', function (Blueprint $table) {
+        Schema::create('post_liker', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->foreignId('user_id');
@@ -28,6 +28,6 @@ class CreateUserLikesPostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_likes_post');
+        Schema::dropIfExists('post_liker');
     }
 }
