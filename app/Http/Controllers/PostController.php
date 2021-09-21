@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
@@ -24,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -35,7 +36,13 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        DB::insert(
+            'INSERT INTO post(user_id, post_time, \'text\')
+            VAlUES (:user_id, now(), :text);', [
+                'user_id' => $request['user_id'],
+                'text' => $request['text'],
+            ]
+        );
     }
 
     /**
@@ -46,7 +53,9 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('pages.post-show', [
+            'post' => $post
+        ]);
     }
 
     /**
