@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="/assets/css/icons/bootstrap-icons.css" rel="stylesheet">
 
     <style>
         /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -411,10 +412,15 @@
 </head>
 
 <body class="antialiased">
+    <x-navbar />
+    <div class="container-fluid">
+        {{ $slot }}
+    </div>
 </body>
 
-<x-navbar />
-
-{{ $slot }}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="/assets/js/icons/bootstrap-icons.json"></script>
+<script src="https://kit.fontawesome.com/6c4f0ffb5f.js" crossorigin="anonymous"></script>
 
 </html>
