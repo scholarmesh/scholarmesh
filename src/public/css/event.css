@@ -1,0 +1,55 @@
+.icon-list>li,.icon-list-1>li {
+    list-style-type: none;
+    margin-top: 15px;}
+
+.icon-list-1 {
+    margin-top: 20pc;
+    font-size: 13px;
+    margin-left: -2.2pc;}
+
+
+.icon-list {
+    margin-top: 5pc;
+    font-size: 13px;}
+
+.price-icon>li {
+    list-style-type: none;
+    color: white;
+    display: inline-block;}
+
+.price-icon>li i {
+    padding: 19px;}
+
+
+.price.lead {
+    background-color: white;
+    width: 68px;
+    height: 68px;
+    border-radius: 45px;
+    padding: 15px 12px 20px 14px;}
+
+.fa.fa-shopping-bag {
+    font-size: 85px;
+    background-color: #FFC107;
+    padding: 42px;
+    color: #ffffff;}
+
+.images1 {
+    width: 120px;
+    padding: 15px;}
+
+@media(max-width: 640px){
+     
+    .icon-list {
+        margin-top: 2pc;
+        display: none;}
+
+    .icon-list-1 {
+        margin-top: 0pc;
+        margin-left: 0pc;
+        display: none; }
+
+    .images1 {
+        width: 82px;
+    }
+}
