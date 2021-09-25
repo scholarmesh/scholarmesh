@@ -8,6 +8,6 @@ use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     function show(Request $req) {
-        UserController::showProfile(Auth::id());
+        UserController::show(Auth::id());
     }
 }

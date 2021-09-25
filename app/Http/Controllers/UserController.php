@@ -9,13 +9,14 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    static function showProfile($id)
+    static function show($id)
     {
-        $user = DB::select('SELECT * FROM user WHERE user_id = :id', ['id' => $id])[0];
-        $posts = DB::select(
-            'SELECT * FROM post WHERE user_id = :id ORDER BY post_time DESC',
-            ['id' => $id]
-        );
+        // $user = DB::select('SELECT * FROM user WHERE user_id = :id', ['id' => $id])[0];
+        // $posts = DB::select(
+        //     'SELECT * FROM post WHERE user_id = :id ORDER BY post_time DESC',
+        //     ['id' => $id]
+        // );
+        return view('profile.user');
         return view('profile.user', [
             'user' => $user,
             'posts' => $posts

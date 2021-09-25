@@ -13,6 +13,8 @@
 
 <main class="container col-xxl-6 col-xl-7 col-8">
 
+{{--    {{ var_dump($user) }}--}}
+
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-auto">
@@ -68,28 +70,28 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-auto">
-                    <img src="{{ asset('images/avatar.png') }}" alt="" class="rounded-circle" style="width: 5rem"/>
-                </div>
-                <div class="col">
-                    <div class="mb-2">
-                        <a href="#" class="h5 link-dark text-decoration-none">User Name</a>
-                        <time><span class="small text-muted ms-3">1 min ago</span></time>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam atque, blanditiis
-                            cum, deleniti dicta earum expedita fugiat laborum laudantium modi omnis pariatur porro sed sequi suscipit
-                            ullam vero voluptatum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{--<div class="card">--}}
+    {{--    <div class="card-body">--}}
+    {{--        <div class="row">--}}
+    {{--            <div class="col-auto">--}}
+    {{--                <img src="{{ asset('images/avatar.png') }}" alt="" class="rounded-circle" style="width: 5rem"/>--}}
+    {{--            </div>--}}
+    {{--            <div class="col">--}}
+    {{--                <div class="mb-2">--}}
+    {{--                    <a href="#" class="h5 link-dark text-decoration-none">User Name</a>--}}
+    {{--                    <time><span class="small text-muted ms-3">1 min ago</span></time>--}}
+    {{--                </div>--}}
+    {{--                <div class="row">--}}
+    {{--                    <div class="col">--}}
+    {{--                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam atque, blanditiis--}}
+    {{--                        cum, deleniti dicta earum expedita fugiat laborum laudantium modi omnis pariatur porro sed sequi suscipit--}}
+    {{--                        ullam vero voluptatum.--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    {{--    </div>--}}
+    {{--</div>--}}
 
     <div class="card">
         <div class="card-body">
